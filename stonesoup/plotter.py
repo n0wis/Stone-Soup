@@ -213,7 +213,7 @@ class Plotter:
                 line = self.ax.plot([state.mean[mapping[0]] for state in track],
                                     [state.mean[mapping[1]] for state in track],
                                     **tracks_kwargs)
-            except AttributeError:  # I think this is the appropriate error
+            except AttributeError:
                 line = self.ax.plot([state.state_vector[mapping[0]] for state in track],
                                     [state.state_vector[mapping[1]] for state in track],
                                     **tracks_kwargs)
